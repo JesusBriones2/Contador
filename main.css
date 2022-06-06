@@ -1,0 +1,66 @@
+body {
+	background-color: #0B0F1C;
+	color: #BAB9B9;
+	display: flex;
+	justify-content: center;
+}
+
+.counter {
+	display: flex;
+	flex-basis: 60px;
+	height: 60px;
+	padding: 0 15px;
+	margin: 150px auto 0;
+	outline: 3px solid #2431E1;
+	border-radius: 10px;
+	user-select: none;
+	font-family: monospace;
+	font-size: 50px;
+	position: relative;
+	transition: padding .3s;
+}
+
+.counter:hover { padding: 0 60px; }
+.counter:hover > .counter__arrow { visibility: visible; }
+.counter:hover > .counter__arrow:first-child { left: 0px; }
+.counter:hover > .counter__arrow:last-child { right: 0px; }
+
+
+
+.counter__num { margin: auto; cursor: pointer; }
+.counter__num:hover { color: #fff; }
+
+
+
+.counter__arrow {
+	visibility: hidden;
+	position: absolute;
+	padding: 0 10px;
+	height: 100%;
+}
+.counter__arrow:first-child { left: -50px; }
+.counter__arrow:last-child { right: -50px; }
+.counter__arrow:hover { color: #fff; }
+.counter__arrow:active { color: #999; }
+
+
+
+.button__counter {
+	position: absolute;
+	top: 50%;
+	font-size: 25px;
+	font-family: tahoma;
+	padding: 10px 20px;
+	background-color: #2431E1;
+	border-radius: 10px;
+	cursor: pointer;
+	user-select: none;
+	color: inherit;
+}
+
+.button__counter:hover { background-color: #2B39F2; }
+.button__counter:active { 
+	background-color: #2431E1;
+	color: inherit;
+}
+

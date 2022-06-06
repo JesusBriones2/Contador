@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contador</title>
-
 	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-	<div class="contador">
-		<span class="flechas btn"><</span>
-		<span class="numero btn">0</span>
-		<span class="flechas btn">></span>
-	</div>
+		<div class="counter" id="container-counter">
+			<span class="counter__arrow" id="arrow_left"><</span>
+			<span class="counter__num" id="counter_num">0</span>
+			<span class="counter__arrow" id="arrow_right">></span>
+		</div>
 
-	<span class="reinicio btn">Iniciar</span>
+		<button class="button__counter" id="button__counter">Iniciar</button>
 
 
-	<script src="code.js"></script>
+	<script src="script.js"></script>
 	
 </body>
 </html>
