@@ -1,66 +1,44 @@
-body {
+.container {
 	background-color: #0B0F1C;
-	color: #BAB9B9;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
 }
 
 .counter {
-	display: flex;
-	flex-basis: 60px;
-	height: 60px;
-	padding: 0 15px;
-	margin: 150px auto 0;
-	outline: 3px solid #2431E1;
-	border-radius: 10px;
+	color: #BAB9B9;
+	font-size: 5em;
+	font-family: sans-serif;
 	user-select: none;
-	font-family: monospace;
-	font-size: 50px;
-	position: relative;
-	transition: padding .3s;
 }
 
-.counter:hover { padding: 0 60px; }
-.counter:hover > .counter__arrow { visibility: visible; }
-.counter:hover > .counter__arrow:first-child { left: 0px; }
-.counter:hover > .counter__arrow:last-child { right: 0px; }
-
-
-
-.counter__num { margin: auto; cursor: pointer; }
-.counter__num:hover { color: #fff; }
-
-
-
-.counter__arrow {
-	visibility: hidden;
+.circle {
 	position: absolute;
-	padding: 0 10px;
-	height: 100%;
-}
-.counter__arrow:first-child { left: -50px; }
-.counter__arrow:last-child { right: -50px; }
-.counter__arrow:hover { color: #fff; }
-.counter__arrow:active { color: #999; }
-
-
-
-.button__counter {
-	position: absolute;
-	top: 50%;
-	font-size: 25px;
-	font-family: tahoma;
-	padding: 10px 20px;
-	background-color: #2431E1;
-	border-radius: 10px;
-	cursor: pointer;
-	user-select: none;
-	color: inherit;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #4063F8;
+	border-radius: 50%;
+	animation: show 1s forwards;
 }
 
-.button__counter:hover { background-color: #2B39F2; }
-.button__counter:active { 
-	background-color: #2431E1;
-	color: inherit;
+@keyframes show {
+	0% {
+		transform: scale(0);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
 }
 
+p {
+	color: #fff;
+}
