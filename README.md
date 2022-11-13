@@ -1,5 +1,5 @@
-# Contador
+# Contador de clicks
 
 * link: https://jesusbriones2.github.io/contador/
 
-![Page capture](page_capture.png "Page capture")
+![screenshot of the page](screenshot.png "screenshot")
