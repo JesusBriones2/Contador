@@ -1,4 +1,4 @@
-# Contador de cliqueos
+# Contador de clicks
 
 * Link : https://jesusbriones2.github.io/click_counter/
 
