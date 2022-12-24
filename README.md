@@ -1,5 +1,5 @@
 # Contador de clicks
 
-* Link : https://jesusbriones2.github.io/click_counter/
+* https://jesusbriones2.github.io/contador-de-clicks/
 
 ![screenshot of the page](screenshot.png "screenshot")
